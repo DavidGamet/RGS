@@ -6,8 +6,9 @@
 
 
 .card {
+  font-family: Abel;
   height: 300px;
-  wight:175px;
+  wight: 175px;
   margin-top: 20px;
   margin-bottom: 100px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
@@ -17,6 +18,7 @@
   position: relative;
 }
 .card-user {
+  font-family: Abel;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -31,11 +33,13 @@
   text-transform: uppercase;
 }
 .card-description {
+  font-family: Abel;
   position: absolute;
   bottom: 10px;
   left: 10px;
 }
 .card-description h2 {
+  font-family: Abel;
   font-size: 24px;
 }
 .card-description p {
@@ -54,5 +58,5 @@
   opacity: 0;
 }
 .card-link:hover {
-  opacity: 0.1;
+  opacity: 0.5;
 }
