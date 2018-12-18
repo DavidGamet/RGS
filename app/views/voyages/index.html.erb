@@ -5,4 +5,5 @@ index.html.erb
 <% @voyages.each do |voyage| %>
   <h2><%= voyage.name %></h2>
   <p><%= voyage.adresse %></p>
+  <%= link_to "Voir / reserver", voyage_path(voyage) %>
 <% end %>
