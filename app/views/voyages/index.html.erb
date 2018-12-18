@@ -1,0 +1,8 @@
+<% provide(:title, "Nos Voyages") %>
+
+index.html.erb
+
+<% @voyages.each do |voyage| %>
+  <h2><%= voyage.name %></h2>
+  <p><%= voyage.adresse %></p>
+<% end %>
