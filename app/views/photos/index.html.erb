@@ -1,0 +1,9 @@
+<% provide(:title, "Nos Photos") %>
+
+index.html.erb
+
+<% @photos.each do |photo| %>
+  <h2><%= photo.name %></h2>
+  <p><%= photo.prix %></p>
+  <%= link_to "Voir / reserver", photo_path(photo) %>
+<% end %>
