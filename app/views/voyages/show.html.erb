@@ -1,4 +1,5 @@
 <% provide(:title, "Nos Voyages") %>
 <%= @voyage.name %>
+<%=cl_image_tag @voyage.photo %>
 
 <%= link_to "Les Voyages", voyages_path %>

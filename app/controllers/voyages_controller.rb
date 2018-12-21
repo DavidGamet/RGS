@@ -34,7 +34,7 @@ before_action :set_voyage, only: [:show, :edit, :update, :destroy]
 
 private
  def voyage_params
-   params.require(:voyage).permit(:name, :adresse, :date, :prix, :description)
+   params.require(:voyage).permit(:name, :adresse, :date, :prix, :description, :photo)
  end
 
  def set_voyage

@@ -1,5 +1,5 @@
 edit.html.erb
-<%= form_for(@voyage) do |f| %>
+<%= simple_form_for(@voyage) do |f| %>
   <div class="form-group">
     <%= f.label :name %>
     <%= f.text_field :name, class: 'form-control' %>
@@ -8,6 +8,12 @@ edit.html.erb
   <div class="form-group">
     <%= f.label :adresse %>
     <%= f.text_field :adresse, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.input :photo %>
+  </div>
+  <div class="form-group">
+    <%= f.input :photo_cache, as: :hidden %>
   </div>
 
   <%= f.submit class: 'btn btn-primary' %>
