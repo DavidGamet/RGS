@@ -1,10 +1,6 @@
-<% provide(:title, "Nos Photos") %>
-
-index.html.erb
-
-<<div class="container">
+<div class="container">
   <div class="row">
-     <% @photos.each do |photo| %>
+     <% @occasions.each do |occasion| %>
 
     <div class="col-xs-12 col-sm-4">
       <!-- insert <div class="card"> -->
@@ -13,9 +9,9 @@ index.html.erb
         <div class="card-description"> </div>
 
 
-          <h2><%= photo.name %></h2>
-          <p><%= photo.prix %></p>
-           <a class="card-link" <%= link_to "", photo_path(photo) %></a>
+          <h2><%= occasion.name %></h2>
+          <p><%= occasion.prix %></p>
+           <a class="card-link" <%= link_to "", voyage_path(voyage) %></a>
         </div>
 
       </div>
