@@ -1,9 +1,26 @@
 <% provide(:title, "Nos Voyages") %>
 
-index.html.erb
 
-<% @voyages.each do |voyage| %>
-  <h2><%= voyage.name %></h2>
-  <p><%= voyage.adresse %></p>
-  <%= link_to "Voir / reserver", voyage_path(voyage) %>
-<% end %>
+
+<div class="container">
+  <div class="row">
+     <% @voyages.each do |voyage| %>
+
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+              <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://res.cloudinary.com/dwe3tzj9c/image/upload/a_auto_left,q_100/v1542032104/IMG_0465_npdmqc.jpg');">
+
+        <div class="card-description"> </div>
+
+
+          <h2><%= voyage.name %></h2>
+          <p><%= voyage.adresse %></p>
+           <a class="card-link" <%= link_to "", voyage_path(voyage) %></a>
+        </div>
+
+      </div>
+    <% end %>
+
+  </div>
+  </div>
+
