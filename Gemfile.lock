@@ -221,7 +221,6 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass (~> 3.3.7)
-  bundler
   byebug
   capybara (~> 2.13)
   carrierwave (~> 1.2)
