@@ -1,2 +1,33 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<% provide(:title, 'Sign up') %>
+
+
+<div class="wrapper">
+  <div class="container">
+  <h2 id=title>Créer mon profil</h2>
+    <div class="row">
+      <div class="col-sm-3">
+
+        <div class="form-group">
+          <%= simple_form_for @user do |f|%>
+           <%= render 'shared/error_messages' %>
+            <%= f.input :name, :placeholder => "John Robert" %>
+            <%= f.text_field :name, class: 'form-control' %>
+
+            <%= f.input :email, :placeholder => "exemple@exemple.com" %>
+
+            <%= f.input :password %>
+            <%= f.input :password_confirmation, :placeholder => "confirmez votre mot de passe"  %>
+            <%= f.input :photo, :placeholder => "download a photo" %>
+
+             <div class="submit">
+            <%= f.submit "Create mon profil", class: "btn btn-danger" %>
+            </div>
+          <% end %>
+        </div>
+
+
+
+    </div>
+  </div>
+</div>
+</div>

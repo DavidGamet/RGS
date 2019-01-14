@@ -4,5 +4,6 @@ Rails.application.routes.draw do
  resources :voyages
  resources :photos
  resources :occasions
+ resources :users
  root to: 'pages#home'
 end

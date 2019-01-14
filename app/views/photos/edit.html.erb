@@ -8,6 +8,8 @@ edit.html.erb
         <div class="form-group">
           <%= simple_form_for @photo_path do |f|%>
             <%= f.input :name, :placeholder => "John Robert" %>
+            <%= f.text_field :name, class: 'form-control' %>
+
             <%= f.input :prix, :placeholder => "45 €" %>
             <%= f.input :description, :placeholder => "very nice guy who likes to clean your theeths" %>
             <%= f.input :photo, :placeholder => "download a photo" %>
