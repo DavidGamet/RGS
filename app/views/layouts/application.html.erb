@@ -23,19 +23,18 @@
   </a>
 
 
-   <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
-      <% end %>
+
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <a class="navbar-wagon-item navbar-wagon-link" <%= link_to "Séjours", voyages_path %></a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Stages Preformance</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Stages Performance</a>
     <a class="navbar-wagon-item navbar-wagon-link"<%= link_to " Photos", photos_path %></a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">Prints</a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">Occasions</a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">Au Féminin</a>
+
 
 
 
@@ -64,7 +63,9 @@
     </div>
   </div>
 </div>
-
+<% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
     <%= yield %>
 
 <div class="footer">

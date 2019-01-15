@@ -11,13 +11,15 @@
           <%= simple_form_for @user do |f|%>
            <%= render 'shared/error_messages' %>
             <%= f.input :name, :placeholder => "John Robert" %>
-            <%= f.text_field :name, class: 'form-control' %>
+
 
             <%= f.input :email, :placeholder => "exemple@exemple.com" %>
 
             <%= f.input :password %>
             <%= f.input :password_confirmation, :placeholder => "confirmez votre mot de passe"  %>
             <%= f.input :photo, :placeholder => "download a photo" %>
+            <%= f.input :photo_cache, as: :hidden %>
+
 
              <div class="submit">
             <%= f.submit "Create mon profil", class: "btn btn-danger" %>
